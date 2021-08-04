@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Create your burger</title>
 </head>
-<body class="debug">
-    <div class="container my-wrapper">
+<body class="">
+    <div class="container my-wrapper d-flex flex-column justify-content-between">
+
+        <!-- HEADER -->
         <header>
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
@@ -23,12 +25,19 @@
                 </div>
             </div>
         </header>
+        <!-- / HEADER -->
 
+        
         <main>
             <div class="container pt-4 pb-4">
+
+                <!-- Nome Hamburger -->
                 <input type="text" name="burgerName" id="burgerName" placeholder="Name Your Burger">
+                <!-- / Nome Hamburger -->
     
                 <div class="row pt-4 pb-4">
+
+                    <!-- cheese -->
                     <div class="col-6 ingredients mt-1 mb-1">
                         <div class="ingredient_img d-inline-block me-2">
                             <img src="img/cheese.svg" class="w-100" alt="cheese">
@@ -41,7 +50,9 @@
                             <label for="ingredient_cheese">Add</label>
                         </div>
                     </div>
+                    <!-- / cheese -->
 
+                    <!-- fried egg -->
                     <div class="col-6 ingredients mt-1 mb-1">
                         <div class="ingredient_img d-inline-block me-2">
                             <img src="img/fried-egg.svg" class="w-100" alt="egg">
@@ -54,6 +65,8 @@
                             <label for="ingredient_egg">Add</label>
                         </div>
                     </div>
+                    <!-- / fried egg -->
+                    <!-- tomato -->
                     <div class="col-6 ingredients mt-1 mb-1">
                         <div class="ingredient_img d-inline-block me-2">
                             <img src="img/tomato.svg" class="w-100" alt="tomato">
@@ -66,6 +79,8 @@
                             <label for="ingredient_tomato">Add</label>
                         </div>
                     </div>
+                    <!-- / tomato -->
+                    <!-- lettuce -->
                     <div class="col-6 ingredients mt-1 mb-1">
                         <div class="ingredient_img d-inline-block me-2">
                             <img src="img/lettuce.svg" class="w-100" alt="lettuce">
@@ -78,6 +93,8 @@
                             <label for="ingredient_lettuce">Add</label>
                         </div>
                     </div>
+                    <!-- / lettuce -->
+                    <!-- mustard -->
                     <div class="col-6 ingredients mt-1 mb-1">
                         <div class="ingredient_img d-inline-block me-2">
                             <img src="img/mustard.svg" class="w-100" alt="mustard">
@@ -90,6 +107,8 @@
                             <label for="ingredient_mustard">Add</label>
                         </div>
                     </div>
+                    <!-- / mustard -->
+                    <!-- ketchup -->
                     <div class="col-6 ingredients mt-1 mb-1">
                         <div class="ingredient_img d-inline-block me-2">
                             <img src="img/ketchup.svg" class="w-100" alt="Ketchup">
@@ -102,8 +121,10 @@
                             <label for="ingredient_Ketchup">Add</label>
                         </div>
                     </div>
+                    <!-- / ketchup -->
                 </div>
 
+                <!-- DISCOUNT CODE -->
                 <div class="discount_code">
                     <label for="couponCode">Discount Coupon</label>
                     <input type="text" name="couponCode" id="couponCode">
@@ -111,10 +132,18 @@
                         <button id="my_btn" type="submit">calculate</button>
                     </div>
                 </div>
-                
-                
+                <!-- / DISCOUNT CODE -->
             </div>
         </main>
+
+        <footer id="total">
+            <div class="container h-100">
+                <div class="row justify-content-between align-items-center h-100">
+                    <div class="col"><span class="your_price">Your Price</span></div>
+                    <div class="col text-end"><span id="total_price">$50</span></div>
+                </div>
+            </div>
+        </footer>
 
     </div>
     
