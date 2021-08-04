@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: hsl(39, 98%, 62%);
+    --secondary: hsl(346, 65%, 51%);
+}
+
 
 /* COMMON */
-
-/* FINE COMMON */
-
+body{font-family: Arial, Helvetica, sans-serif;}
+.wrapper{height: 100vh; margin: 0 auto;}
 
 /* HEADER */
+header{height: 150px; position: relative;}
+.logo-img img{height: 250px; position: absolute; top: -30px; right: -50px;}
+.title {font-weight: 600;}
 
 /* FINE HEADER */
 
@@ -23,3 +30,7 @@
 /* FOOTER */
 
 /* FINE FOOTER */
+
+
+/* debug =%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%=%  */
+.debug header {background-color: var(--primary);}
