@@ -6,25 +6,33 @@
 
 :root {
     --primary: hsl(39, 98%, 62%);
+    --lighter: hsl(39, 88%, 81%);
     --secondary: hsl(346, 65%, 51%);
+    --brightner: brightness(1.1);
 }
 
 
 /* COMMON */
 body{font-family: Arial, Helvetica, sans-serif;}
-.wrapper{height: 100vh; margin: 0 auto;}
+.my-wrapper{height: 100vh; margin: 0 auto;}
 
 /* HEADER */
 header{height: 150px; position: relative;}
 .logo-img img{height: 250px; position: absolute; top: -30px; right: -50px;}
 .title {font-weight: 600;}
 
-/* FINE HEADER */
-
-
 /* MAIN */
+#burgerName{border: none; font-size: 34px;}
+#burgerName:focus, #burgerName:active{border: none;}
 
-/* FINE MAIN */
+.ingredient_img{width: 70px;}
+.ingredient_title{text-transform: capitalize;}
+
+#couponCode{width: 80%; margin-left: 20px; background-color: var(--lighter); border-radius: 5px; border: none; text-transform: uppercase;}
+
+.calculate {width:100%; text-align: center; margin: 15px auto;}
+#my_btn{border: none; background-color: var(--primary); padding: 15px 25px; border-radius: 5px; font-weight: 600;}
+#my_btn:hover{filter: var(--brightner)}
 
 
 /* FOOTER */
