@@ -13,11 +13,15 @@
 
 
 /* COMMON */
-body{font-family: Arial, Helvetica, sans-serif;}
+body{font-family: Arial, Helvetica, sans-serif; background-color: antiquewhite;}
+main{background-color: white;}
 .my-wrapper{position: relative; height: 100vh; margin: 0 auto;}
+.my-check {width: 15px; height: 15px; background-color: var(--secondary);}
+.my-add {color: var(--secondary);}
 
 /* HEADER */
-header{height: 150px; position: relative; background-color: var(--primary);}
+header{height: 200px; position: relative; background-color: var(--primary);}
+.my-header {height: 150px;}
 .logo-img img{height: 250px; position: absolute; top: -30px; right: -50px;}
 .title {font-weight: 600;}
 
