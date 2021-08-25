@@ -17,6 +17,7 @@ body{font-family: Arial, Helvetica, sans-serif; background-color: antiquewhite;}
 main{background-color: white;}
 .my-wrapper{position: relative; height: 100vh; margin: 0 auto;}
 .my-check {width: 15px; height: 15px; background-color: var(--secondary);}
+.my-check:hover{cursor: pointer;}
 .my-add {color: var(--secondary);}
 
 /* HEADER */
